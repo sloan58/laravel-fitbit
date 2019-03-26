@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FitbitController@index');
+Route::get('/callback', 'FitbitController@callback');
